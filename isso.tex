@@ -1,0 +1,242 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+\usepackage{hyperref}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{378ee6}%{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{37474F}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Alex Frederico}
+\tagline{Cientista da Computação}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{2.5cm}{profile-picture}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+    \email{alexfredericomfm@gmail.com}
+    \phone{(85) 9.9705-8288}
+    \location{Maracanaú, Ceará}
+    \linkedin{
+        \href{https://www.linkedin.com/in/alex-frederico-mathias-felix-de-melo-6682b5107/}{linkedin.com/in/Alex-Frederico-Mathias}}
+    \github{
+        \href{https://github.com/alexfrederico}{github.com/alexfrederico}}
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection[page1sidebar]{Experiência}
+
+\cvevent{Consultor de Automatização e Digitalização}{Companhia Industrial de Cimento Apodi \hfill Tempo integral}{ago. de 2020 -- o momento}{Fortaleza, Ceará}
+\begin{comment}
+\begin{itemize}
+    \item Otimizar e manutenir inteligencia artificial que controla o moinho de cimento;
+    \item Apresentar informações acionáveis para ajudar usuários finais corporativos a tomar decisões de negócios bem informadas.
+\end{itemize}
+\cvtag{Python} 
+\cvtag{PostgreSQL}
+\cvtag{ETL}
+\cvtag{Qlik Sense}
+\cvtag{Data visualization}
+\cvtag{Mineração de dados}
+\cvtag{Business Intelligence}
+\end{comment}
+
+\vspace{10px}
+
+\cvevent{Técnico de Automatização e Integração}{Companhia Industrial de Cimento Apodi \hfill Tempo integral}{dez. de 2019 -- jul. de 2020}{Fortaleza, Ceará}
+\begin{comment}
+\begin{itemize}
+    \item Otimizar e manutenir inteligencia artificial que controla o moinho de cimento;
+    \item Apresentar informações acionáveis para ajudar usuários finais corporativos a tomar decisões de negócios bem informadas.
+\end{itemize}
+\cvtag{Python} 
+\cvtag{PostgreSQL}
+\cvtag{ETL}
+\cvtag{Qlik Sense}
+\cvtag{Data visualization}
+\cvtag{Mineração de dados}
+\cvtag{Business Intelligence}
+\end{comment}
+
+\vspace{10px}
+
+\cvevent{Pesquisador e Elaborador de Software}{Companhia Industrial de Cimento Apodi \hfill Autônomo}{ago. de 2019 -- nov. de 2019}{Fortaleza, Ceará}
+\begin{itemize}
+    \item Otimizar e manutenir inteligencia artificial que controla o moinho de cimento;
+    \item Apresentar informações acionáveis para ajudar usuários finais corporativos a tomar decisões de negócios bem informadas;
+    \item Desenvolver dashboards que mostram métricas e indicadores importantes para alcançar objetivos e metas traçadas;
+    \item Desenvolver extração de dados de diversos sistemas, transformação desses dados conforme regras de negócios e por fim o carregamento em um Data Warehouse;
+\end{itemize}
+\cvtag{Python} 
+\cvtag{PostgreSQL}
+\cvtag{ETL}
+\cvtag{Qlik Sense}
+\cvtag{Data visualization}
+\cvtag{Mineração de dados}
+\cvtag{Business Intelligence}
+
+\vspace{10px}
+
+\cvevent{Cientista de Dados}{Companhia Industrial de Cimento Apodi \hfill Estágio}{jun. de 2018 – jun. de 2019}{Pecém, Ceará}
+\begin{itemize}
+    \item Fazer a coleta e armazenamento dos dados de sensores de forma a gerar dados que podem ser manipulados para analises;
+    \item Desenvolver dashboard para analises dos dados coletados usando medidas estatísticas para encontrar correlações, similaridade e anomalias;
+    \item Utilizar algoritmos de detecção de anomalias e machine learning para a limpeza dos dados brutos coletados;
+    \item Participar da equipe de cientistas de dados para automatizar um moinho de cimento.
+\end{itemize}
+\cvtag{Python} 
+\cvtag{MongoDB}
+\cvtag{Sklearn}
+%\cvtag{Pepiline}
+\cvtag{Seaborn}
+\cvtag{Estatística}
+%\cvtag{Linux}
+\cvtag{Pandas}
+\cvtag{Matplotlib}
+\cvtag{Data visualization}
+%\cvtag{TensorFlow}
+\cvtag{Anomaly detection}
+%\cvtag{Flask}
+\cvtag{Git}
+
+\vspace{10px}
+
+
+\cvevent{Monitor de Inteligência Artificial}{Universidade Federal do Ceará \hfill Monitoria}{jan. de 2018 -- dez. de 2018}{Russas, Ceará}
+\begin{itemize}
+    \item Auxiliar o professor-orientador na realização de trabalhos práticos e experimentais, na preparação de material didático e em atividades de classe e/ou laboratório.
+\end{itemize}
+\cvtag{SMA}
+\cvtag{Pathfinding}
+\cvtag{Planejamento Automatizado}
+\cvtag{Machine Learning}
+\cvtag{NLP}
+\cvtag{Sistemas Especialistas} 
+\cvtag{Lógica Proposicional}
+
+\vspace{10px}
+
+\cvevent{Monitor de Programação Orientada a Objetos}{Universidade Federal do Ceará \hfill Monitoria}{jul. de 2016 -- dez. de 2017}{Russas, Ceará}
+\begin{itemize}
+    \item Participar das tarefas didáticas, inclusive na programação de aulas e em trabalhos escolares;
+    \item Contribuir, juntamente com o professor-orientador, para a avaliação do andamento da disciplina ou da área.
+\end{itemize}
+\cvtag{Java} 
+\cvtag{Teste Unitário}
+\cvtag{POO}
+\cvtag{UML}
+\cvtag{Ensino Hibrido}
+
+\vspace{10px}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection{Projetos Paralelos}
+
+\cvevent{Twinstabot}{Um bot do Instagram que posta uma nuvem de palavras com os assuntos mais comentados do Twitter}{}{}
+\begin{itemize}
+    \item Desenvolver mineração dos dados do Twitter;
+    \item Desenvolver algoritmo para o processamento de texto;
+    \item Desenvolver algoritmo para classificação dos tweets;
+\end{itemize}
+\cvtag{Python} 
+\cvtag{NLP}
+\cvtag{Web Scraping}
+\cvtag{Selenium}
+\cvtag{Spacy}
+\cvtag{NLKT}
+\cvtag{Expressão regular}
+\cvtag{Sklearn}
+\cvtag{Git}
+
+\vspace{10px}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection{Educação}
+
+\cvevent{Bacharelado em Ciência da Computação}{Universidade Federal do Ceará}{jul. de 2015 -- jul. de 2019}{Russas, Ceará}
+\begin{itemize}
+    \item Trabalho de Conclusão de Curso: Avaliação da remoção de anomalias em dados coletados por sensores.
+\end{itemize}
+%\faMortarBoard Score: 13.53/20
+
+\vspace{10px}
+\cvevent{Curso Qlik Sense}{Cubotimize Solucoes em Inteligencia Tecnologica}{set. de 2019 -- set. de 2019}{Fortaleza, Ceará}
+\begin{itemize}
+    \item Análises - N1;
+    \item Arquitetura - N2;
+    \item Análises Avançadas - N3;
+    \item Arquitetura Avançada - N4.
+\end{itemize}
+
+\clearpage
+
+\end{document}
