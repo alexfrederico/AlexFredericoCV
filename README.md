@@ -1,6 +1,7 @@
 # Alex Frederico CV
 ## Currículo produzido no LaTeX utilizando a ferramenta Overleaf
 
+<img src="https://uploaddeimagens.com.br/images/003/006/498/full/Capturar.PNG?1608246523" alt="Imagem do currículo compilado" title="Curriculum Vitæ Alex" />
 
 # LaTeX
 
